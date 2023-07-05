@@ -1,0 +1,22 @@
+Definition: You are given a dataset of reviews of restaurants, your task is to classify the polarity of each aspect of the review.
+The output will be the aspects category and the aspects sentiment polarity.The aspect should be in one of food, service, price, ambience,
+and anecdotes/miscellaneous. Which anecdotes/miscellaneous is respected to one term. The sentiment polarity
+should be in positive, negative, neutral, conflict, and none. In case the aspect was not mentioned, the polarity should
+be none.
+
+Positive example 1 -
+input: To be completely fair, the only redeeming factor was the food, which was above average, but couldnt make up for all the other deficiencies of Teodora.
+output: food:positive,service:none,price:none,ambience:none,anecdotes/miscellaneous:negative
+explanation: The sentence has mention of food which is above average, therefore the food polarity is positive.
+
+Positive example 2 -
+input: Where Gabriela personaly greets you and recommends you what to eat.
+output: food:none,service:positive,price:none,ambience:none,anecdotes/miscellaneous:none
+
+Negative example 1 -
+input: We were very disappointed.
+output: food:none,service:none,price:none,ambience:none,anecdotes/miscellaneous:negative
+explanation: The sentence has negative sentiment and is not related to food, service, price, ambience, therefore the anecdotes/miscellaneous polarity is negative.
+
+Now complete the following example -
+Input:
