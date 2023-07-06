@@ -1,5 +1,5 @@
 Definition: You are given a dataset of reviews of restaurants, your task is to classify the polarity of each aspect of the review.
-The output will be the aspects category and the aspects sentiment polarity.The aspect should be in one of food, service, price, ambience,
+The output will be the aspects category and the aspects sentiment polarity. The aspect should be in one of food, service, price, ambience,
 and anecdotes/miscellaneous. Which anecdotes/miscellaneous is respected to one term. The sentiment polarity
 should be in positive, negative, neutral, conflict, and none. In case the aspect was not mentioned, the polarity should
 be none.
@@ -17,6 +17,16 @@ Negative example 1 -
 input: We were very disappointed.
 output: food:none,service:none,price:none,ambience:none,anecdotes/miscellaneous:negative
 explanation: The sentence has negative sentiment and is not related to food, service, price, ambience, therefore the anecdotes/miscellaneous polarity is negative.
+
+Negative example 2-
+input: Where Gabriela personaly greets you and recommends you what to eat.
+output: service:positive
+explanation: The output should be list for all aspect, therefore, even the sentiment is correct, it's still wrong
+
+Negative example 3-
+input: Where Gabriela personaly greets you and recommends you what to eat.
+output: positive
+explanation: Even the sentence is positive itself, the result should be the sentiment of the aspect, in this case it is about service, therefore, the result is wrong.
 
 Now complete the following example -
 Input:

@@ -1,0 +1,19 @@
+Definition: The output will be the aspects (both implicit and explicit), and the aspects sentiment polarity. In cases where there are no aspects, the output should be no-aspect:none. In case there are multiple aspects, the output should be aspect1:sentiment1,aspect2:sentiment2
+
+In this task, the aspect should be in one of food, service, price, ambience, and anecdotes/miscellaneous. The sentiment should be in positive, negative, neutral.
+
+Positive example 1 -
+input: To be completely fair, the only redeeming factor was the food, which was above average, but couldnt make up for all the other deficiencies of Teodora.
+output: food:positive,anecdotes/miscellaneous:negative
+
+Positive example 2 -
+input: Where Gabriela personaly greets you and recommends you what to eat.
+output: service:positive
+
+Negative example 1-
+input: Where Gabriela personaly greets you and recommends you what to eat.
+output: positive
+explanation: The output should include aspect, therefore, the output should be service:positive
+
+Now complete the following example -
+Input:

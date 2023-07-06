@@ -2,3 +2,6 @@ datasets
 transformers
 pandas
 torch
+sentencepiece
+protobuf==3.19.0
+lightning
